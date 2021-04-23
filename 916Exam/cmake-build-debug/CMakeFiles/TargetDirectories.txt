@@ -1,0 +1,3 @@
+/home/peacegabi/CLionProjects/916Exam/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/peacegabi/CLionProjects/916Exam/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/peacegabi/CLionProjects/916Exam/cmake-build-debug/CMakeFiles/916Exam.dir
