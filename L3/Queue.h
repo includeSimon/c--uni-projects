@@ -1,8 +1,8 @@
 #pragma once
+#include "Stack.h"
 #include <memory>
 #include <iostream>
 using namespace std;
-
 
 typedef int TElem;
 
@@ -11,9 +11,17 @@ class Queue
 public:
   Queue(const int &);
   ~Queue(){}; //nu avem nevoie de destructor deoarece folosim smart pointers
-  bool addFirst(const TElem &elem);
-  void smartShow();
-  void showAll();
+
+  bool add(const TElem &elem);
+  void addFromStack(const vector<TElem> &);
+  bool deleteElem(const TElem &elem);
+
+  //simuleaza punerea unei carti pe stack
+  TElem push();
+
+  //metodele de afisare
+  void show();
+  void showNext();
 
 private:
   unique_ptr<TElem[]> elems;
@@ -21,4 +29,5 @@ private:
   int cap;
   int head;
   int firstEmpty;
+  int size;
 };
